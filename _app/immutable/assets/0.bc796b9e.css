@@ -397,13 +397,13 @@ video {
 .title-1 {
     font-family: clash display, impact, serif;
     line-height: 1.25;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: 700
 }
 
 @media (min-width: 768px) {
     .title-1 {
-        font-size: 64px
+        font-size: 55px
     }
 }
 
@@ -550,7 +550,7 @@ input[type=checkbox] {
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     will-change: auto;
     display: block;
-    height: .5rem;
+    height: 3px;
     width: 0px;
     --tw-bg-opacity: 1;
     background-color: rgb(212 52 254 / var(--tw-bg-opacity));
