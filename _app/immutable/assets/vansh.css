@@ -11,6 +11,9 @@
     --tw-divide-y-reverse: 0;
     border-top-width: 0;
     border-bottom-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .ps-img {
@@ -32,6 +35,7 @@
   .faq-heading {
     margin-left: 10px;
     margin-bottom: 40px;
+    width: max-content;
 
   }
 
@@ -86,6 +90,9 @@
     color: black;
     transition: font-size 0.5s;
   }
+  /* #answer{
+    display: none;
+  } */
 
   .open {
     font-size: 80%;

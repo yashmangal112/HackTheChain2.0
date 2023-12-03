@@ -1,5 +1,6 @@
 @import"https://fonts.googleapis.com/css2?family=Unica+One&display=swap";
 @import"https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Unica+One&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
     font-family: clash display;
     src: local("clash display bold"), url(../../../ClashDisplay-Variable.ttf) format("truetype")
@@ -425,7 +426,9 @@ video {
     line-height: 1.25;
     font-weight: 700
 }
-
+.biggest{
+    font-family: 'Poppins', sans-serif;
+}
 .btn-base {
     transition-property: all;
     transition-duration: .15s;
