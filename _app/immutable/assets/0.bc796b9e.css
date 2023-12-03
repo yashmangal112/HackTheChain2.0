@@ -5,6 +5,10 @@
     font-family: clash display;
     src: local("clash display bold"), url(../../../ClashDisplay-Variable.ttf) format("truetype")
 }
+@font-face {
+    font-family: druk display;
+    src: local("druk display bold"), url(../../../Druk\ Wide\ Bold.ttf) format("truetype")
+}
 
 *,
 :before,

@@ -35,7 +35,7 @@
   .faq-heading {
     margin-left: 10px;
     margin-bottom: 40px;
-    width: max-content;
+    /* width: max-content; */
 
   }
 
@@ -59,14 +59,12 @@
 
   .toggle-button {
     position: relative;
-    /* margin-top: 10px; */
     background-color: null;
     color: #903AFF;
     border: none;
     font-size: 25px;
     left: 470px;
     bottom: 35px;
-    /* border-radius: 5px; */
     cursor: pointer;
   }
 
@@ -108,10 +106,10 @@
      width: 25px; 
      margin-left: 120px;
 }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 760px) {
     .faq-image {
       /* float: right; */
-      width: 300px;
+      width: 200px;
       /* margin-left: 100px; */
     }
     .faq-star{
