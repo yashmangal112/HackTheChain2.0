@@ -38,7 +38,10 @@
             transform: translateY(0);
             opacity: 1;
         }
-
+.gopal{
+  justify-content: center;
+  nav-left: 100px;
+}
         .revealx {
             position: relative;
             transform: translateX(-150px);
@@ -62,6 +65,11 @@
             transform: translateX(0);
             opacity: 1;
         }
+        .btn-prnt {
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
 
         .popup {
             display: none;
@@ -312,8 +320,9 @@
                                 <p data-animate-text>Highlight of the prizes or rewards for winners and for
                                     participants.</p>
                             </div>
-                            <div class="flex justify-center revealxneg relative -left-10"><img data-animate data-animation="pop"
+                          <div class="gopal">  <div class="flex justify-center revealxneg relative "><img data-animate data-animation="pop"
                                     src="./images/trophy.webp" alt="trophy for winner" ></div>
+                                    </div>
                             <div class="space-y-32 revealx">
                                 <div class="max-lg:hidden">
                                     <h2 class="heading-1"><span data-animate-text data-animation-direction="left">Prizes
@@ -324,7 +333,7 @@
                                         Highlight of the prizes or rewards for winners and for participants.</p>
                                 </div>
                                 <ul data-animate data-animation-direction="up"
-                                    class="flex items-center justify-center gap-4 text-2xl font-bold text-center relative -left-10">
+                                    class="flex items-center justify-center gap-4 text-2xl font-bold text-center relative">
                                     <li
                                         class="relative pt-20 pb-10 bg-pink/[12%] px-2 sm:px-6 border border-pink rounded-md">
                                         <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
@@ -337,24 +346,7 @@
                                         <span class="text-sm md:text-lg font-semibold">Prize worth</span>
                                         <p class="text-pink text-[16px] md:text-lg">₹1,00,000</p>
                                     </li>
-                                    
-                                    <!-- <ul data-animate data-animation-direction="up"
-                                    class="flex items-center justify-center gap-4 text-2xl font-bold text-center relative -left-10">
-                                    <li class="relative pt-20 pb-10 bg-pink/[12%] px-2 sm:px-6 border border-pink rounded-md">
-                                        <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
-                                            <img src="./images/silver_medal.webp" alt="silver medal" class="w-[70%]">
-                                        </div>
-                                        <div class="absolute inset-x-0 top-0 text-center">
-                                            <p class="text-blue text-[16px] md:text-lg">Prize Cash</p>
-                                            <span class="text-pink text-[16px] md:text-lg">₹50,000</span>
-                                        </div>
-                                        <div class="absolute inset-x-0 bottom-0 text-center">
-                                            <p class="text-green text-[16px] md:text-lg">Prize Worth</p>
-                                            <span class="text-pink text-[16px] md:text-lg">1,00,000</span>
-                                        </div>
-                                        <h3 class="absolute inset-x-0 top-1/2 transform -translate-y-[-50%]">2nd</h3>
-                                        <p class="absolute inset-x-0 top-1/2 transform -translate-y-[-50%] text-sm md:text-lg font-semibold">Place</p>
-                                    </li> -->
+
                                     <li
                                         class="relative pt-32 pb-10 bg-purple/[12%] px-2 sm:px-6 border border-purple rounded-md">
                                         <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
@@ -381,6 +373,7 @@
                                     </li>
                                 </ul>
                             </div>
+                          <!-- </div> -->
                         </div>
                     </section>
                     <hr style="height:1px;border:none;color:#333;background-color:#333;">
