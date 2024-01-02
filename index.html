@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/images/logo - Copy.png" />
+    <script src="https://kit.fontawesome.com/fc9233d1a9.js" crossorigin="anonymous"></script>
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <meta name="viewport" content="width=device-width" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="_app\immutable\assets\slider.css">
     <link href="./_app/immutable/assets/vansh.css" rel="stylesheet">
     <style>
+      @import "compass/css3";
         html {
             scroll-behavior: smooth;
         }
@@ -98,6 +100,7 @@
     .codebasefloat{
         animation: floatUpDown 3s infinite;
     }
+
     </style>
 
     <title>HackTheChain 2.0</title>
@@ -157,13 +160,14 @@
                             <img src="images/logo.png" class="w-[90px] ">
                             <h2 class="text-[26px] heading-1" style="font-family:Medula One; font-size: xx-large;">
                                 HackTheChain<span class="text-pink"> 2.0</span></h2>
-                        </a> <button class="md:hidden" id="popup"><svg width="19" height="14" viewBox="0 0 19 14"
+                        </a> <button class="md:hidden" id="popup" onclick="toggleDropdown()"><svg width="19" height="14" viewBox="0 0 19 14"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M1.35714 0H8.14286C8.50279 0 8.84799 0.1475 9.1025 0.410051C9.35701 0.672601 9.5 1.0287 9.5 1.4C9.5 1.7713 9.35701 2.1274 9.1025 2.38995C8.84799 2.6525 8.50279 2.8 8.14286 2.8H1.35714C0.997206 2.8 0.652012 2.6525 0.397498 2.38995C0.142984 2.1274 0 1.7713 0 1.4C0 1.0287 0.142984 0.672601 0.397498 0.410051C0.652012 0.1475 0.997206 0 1.35714 0ZM10.8571 11.2H17.6429C18.0028 11.2 18.348 11.3475 18.6025 11.6101C18.857 11.8726 19 12.2287 19 12.6C19 12.9713 18.857 13.3274 18.6025 13.5899C18.348 13.8525 18.0028 14 17.6429 14H10.8571C10.4972 14 10.152 13.8525 9.8975 13.5899C9.64298 13.3274 9.5 12.9713 9.5 12.6C9.5 12.2287 9.64298 11.8726 9.8975 11.6101C10.152 11.3475 10.4972 11.2 10.8571 11.2ZM1.35714 5.6H17.6429C18.0028 5.6 18.348 5.7475 18.6025 6.01005C18.857 6.2726 19 6.6287 19 7C19 7.3713 18.857 7.7274 18.6025 7.98995C18.348 8.2525 18.0028 8.4 17.6429 8.4H1.35714C0.997206 8.4 0.652012 8.2525 0.397498 7.98995C0.142984 7.7274 0 7.3713 0 7C0 6.6287 0.142984 6.2726 0.397498 6.01005C0.652012 5.7475 0.997206 5.6 1.35714 5.6Z"
                                     fill="white"></path>
                             </svg></button>
-                        <div id="popup1" class="absolute left-[45%] top-[40%] bg-[#000000db] p-10 popup"><ul class="capitalize flex flex-col justify-center gap-8 transition-default">
+                        <div id="popup1" class=" border border-gray-800 absolute left-[0%] top-[90%] bg-[#000000db] p-10 popup w-full text-center dropdown-content"><ul class="capitalize flex flex-col justify-center gap-8 transition-default">
+                         <li> <button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-square-xmark fa-xl"></i></button></li>
                           <li><a href="#overview">overview</a> </li>
                           <li><a href="#sponsors">Sponsors</a></li>
                             <li><a href="#judging" >Judging</a> </li>
@@ -204,12 +208,12 @@
                                     <div class="space-y-0">
                                         <h1 class="title-1 relative"><img src="./images/bulb.png" alt="bulb"
                                                 class="  md:-top-14 right-1 md:right-4 absolute "
-                                                loading="lazy"> <span>CodeBase IIIT Kota</span>
-                                                <div class="text-purple text-center text-2xl my-4">Presents</div>
-                                            <span>HackTheChain 2.0 </span><span class="text-pink"></span><span
+                                                loading="lazy"> <span class ="lg:text-[55px] text-1xl text-4xl">CodeBase IIIT Kota</span>
+                                                <div class="text-purple text-center text-2xl my-4 ">Presents</div>
+                                            <span class="text-4xl  lg:text-[55px]">HackTheChain 2.0 </span><span class="text-pink"></span><span
                                                 class="text-[30px]">🔗</span>
                                         </h1>
-                                        <h3 class="max-w-md max-lg:container max-lg:max-w-lg biggest text-pink my-7 pt-7 text-2xl text-center">
+                                        <h3 class="max-w-md max-lg:container max-lg:max-w-lg biggest text-pink my-7 pt-7 lg:text-2xl text-4xl text-center ">
                                           The Biggest Hackathon in Kota City 
                                         </h3>
                                         <p class="max-w-md max-lg:container max-lg:max-w-lg text-center italic pt-5">
@@ -657,13 +661,13 @@
                       <h2 class=" text-[2rem] xl:text-[3rem] text-center" style="font-family: clash display, impact, serif;font-weight: 700; " data-animate-text data-animation-selection="letters" data-animation-direction="down">HackTheChain <span class="text-purple">Glimpse</span></h2>
                       <div class=" flex max-md:flex-col justify-evenly items-center h-[90vh] w-full" >
                           <div>
-                              <iframe class="w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg" src="https://www.youtube.com/embed/EHJaHg6EE4c?si=TYEm-6rBNItRBkEH&autoplay=1" title="HackTheChain 2023 After Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg" src="https://www.youtube.com/embed/EHJaHg6EE4c?si=TYEm-6rBNItRBkEH&autoplay=1" title="HackTheChain 2023 After Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                           </div>
                           <div >
                                  <div class="slideshow-container ">
                                       <div class="mySlides fade text-align:center">
                                         <div class="numbertext">1 / 3</div>
-                                        <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/slider/image1.jpg');background-repeat: no-repeat;  background-size: cover;" >
+                                        <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_2.jpeg');background-repeat: no-repeat;  background-size: cover;" >
                                           <div style="text-align:center;position:relative;" class="pb-2" >
                                               <span class="dot" onclick="currentSlide(1)"></span> 
                                               <span class="dot" onclick="currentSlide(2)"></span> 
@@ -674,7 +678,7 @@
                                       
                                       <div class="mySlides fade text-align:center">
                                           <div class="numbertext">2 / 3</div>
-                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/slider/image2.jpg');background-repeat: no-repeat;  background-size: cover;" >
+                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_3.jpg');background-repeat: no-repeat;  background-size: cover;" >
                                             <div style="text-align:center;position:relative;" class="pb-2" >
                                                 <span class="dot" onclick="currentSlide(1)"></span> 
                                                 <span class="dot" onclick="currentSlide(2)"></span> 
@@ -685,7 +689,7 @@
                                       
                                         <div class="mySlides fade text-align:center">
                                           <div class="numbertext">3 / 3</div>
-                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/slider/image3.jpg');background-repeat: no-repeat;  background-size: cover;" >
+                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_1.jpg');background-repeat: no-repeat;  background-size: cover;" >
                                             <div style="text-align:center;position:relative;" class="pb-2" >
                                                 <span class="dot" onclick="currentSlide(1)"></span> 
                                                 <span class="dot" onclick="currentSlide(2)"></span> 
@@ -710,14 +714,14 @@
                           <h2 class=" text-[2rem] xl:text-[3rem] text-center" style="font-family: clash display, impact, serif;font-weight: 700; " data-animate-text data-animation-selection="letters" data-animation-direction="down">Testi<span class="text-purple">monials</span></h2>  
                         <div class="row">
                           <div class="col-sm-12">
-                            <div id="customers-testimonials" class="owl-carousel">
+                            <div id="customers-testimonials" class="owl-carousel  " >
                   
                               <!--TESTIMONIAL 1 -->
                               <div class="item">
-                                  <div class="sh-p">
+                                  <div class="sh-p ">
                                 <div class="shadow-effect">
                                   <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                                  <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                                  <p> maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
                                 <div class="testimonial-name"> - LARA ATKINSON</div>
                   
                                 </div>
@@ -751,7 +755,7 @@
                                   <div class="sh-p">
                                 <div class="shadow-effect">
                                   <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
-                                  <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                                  <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource </p>
                                 <div class="testimonial-name"> - IAN OWEN</div>
                   
                                 </div></div>
@@ -828,7 +832,7 @@
                             <hr class="faq-hr" />
                         </div>
                         <div class="faq-image">
-                          <div class="">
+                          <div class="question">
                             <img data-animate data-animation="pop" data-animation-direction="left" class="faq-image codebasefloat" src="./images/man-thinking.webp"
                             alt="man sitting on cloud and thinking" />
                         </div>
@@ -862,8 +866,14 @@
                                   <li><a href="#faqs">FAQs</a></li>
                                   <li>
                                     <a href="/register">Apply with devfolio</a>
-                                    <div class="apply-button" data-hackathon-slug="turinghacx" data-button-theme="light"
-                                      style="height: 44px; width: 312px"></div>
+                                    <!-- <div class="apply-button" data-hackathon-slug="turinghacx" data-button-theme="light"
+                                      style="height: 44px; width: 312px"></div> -->
+                                    <div 
+                                      class="apply-button" 
+                                      data-hackathon-slug="hackthechain2" 
+                                      data-button-theme="light"
+                                      style="height: 44px; width: 312px"
+                                    ></div>
                                   </li>
                                 </ul>
                               </nav>
@@ -943,6 +953,7 @@
                 </div>
 
         <script>
+          
             {
                 __sveltekit_18ttasc = {
                     base: new URL(".", location).pathname.slice(0, -1),
@@ -970,6 +981,17 @@
 
         </script>
         <script>
+     function toggleDropdown()
+     {
+        var dropDown = document.getElementById("popup1");
+
+        // Toggle the visibility of the element
+        if (dropDown.style.display === "none") {
+            dropDown.style.display = "block";
+        } else {
+            dropDown.style.display = "none";
+        }
+    }
             function reveal() {
                 var reveals = document.querySelectorAll(".reveal");
 
@@ -1021,16 +1043,6 @@
             window.addEventListener("scroll", revealxneg);
             revealx();
 
-
-
-
-            var element = document.getElementById('popup');
-            element.addEventListener('click', function () {
-                var popup = document.getElementById('popup1');
-                // Toggle the 'highlight' class
-                popup.classList.toggle('popup');
-            });
-            
             window.onscroll = function() {scrollFunction()};
 
  
@@ -1131,6 +1143,7 @@ if (currentSection) {
         <script src="tilt.js"></script>
     </div>
     <script src="https://unpkg.com/http-server/bin/http-server"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 <script src="_app\immutable\chunks\slider.js"></script>

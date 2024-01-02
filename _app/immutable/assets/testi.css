@@ -318,21 +318,46 @@
 
 
   @media only screen and (max-width: 480px) {
+
     .sh-p {
         border-radius: 59% 41% 56% 44% / 41% 56% 44% 59% ;
         background-color: #5E28A7;
         box-shadow: 0 0 20px #5E28A7;
-        height: 372px;
+        height: 432px;
         transition: all .5s ease-in-out;
-        width: 320px;
+        height: 302px;
+        width: 250px;
+        left: -100px;
     }
     .shadow-effect {
-        height: 372px;
-        width: 320px;
+        height: 432px;
+        width: 250px;
+    }
+    .shadow-effect > p {
+        max-width: 230px;
     }
     .item {
         margin-right: 30px;
         padding-right: 30px;
+        
+    }
+    #customers-testimonials{
+        left: -30px;
+    }
+    @media (max-width: 640px) {
+        #customers-testimonials {
+          width: 100vw;
+        }
+      }
+      
+    .owl-dots {
+        margin-top: 70px;
+    }
+    .faq-image {
+        display: none;
+    }
+    .title-1{
+        font-size: 30px;
     }
  }
 
@@ -342,9 +367,11 @@
  } */
 
  .btn-prnt {
-    width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .bla-btn {
     background: transparent;
@@ -435,3 +462,12 @@
     width: 100%;
 } 
  
+
+.popup {
+    min-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: auto;
+  }
