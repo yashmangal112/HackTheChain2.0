@@ -1,0 +1,124 @@
+.faq-above {
+    position: relative;
+    top: 96px;
+    height: 1px;
+    border-top-width: 1px;
+    border-color: #454545;
+
+  }
+
+  #faqs {
+    --tw-divide-y-reverse: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ps-img {
+    width: 250px;
+  }
+
+  .faq {
+    /* margin-right: 200px; */
+    padding: 7%;
+  }
+
+  .faq-container {
+    max-width: 700px;
+    float: left;
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+
+  .faq-heading {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    /* width: max-content; */
+
+  }
+
+  .heading {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: clash display, impact, serif;
+  }
+
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: null;
+    padding-bottom: 0;
+    /* margin-bottom: 5px; */
+    /* border-radius: 5px; */
+    font-size: 18px;
+    transition: font-size 0.5s;
+  }
+
+  .toggle-button {
+    position: relative;
+    background-color: null;
+    color: #903AFF;
+    border: none;
+    font-size: 25px;
+    left: 470px;
+    bottom: 35px;
+    cursor: pointer;
+  }
+
+  .faq-hr {
+    width: 80%;
+    border-color: rgb(212, 52, 254);
+    margin-left: 10px;
+    /* padding-top: 10px; */
+    padding-bottom: 5px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 20px;
+    /* font-size:15px; */
+    /* background-color: #CB2098; */
+    background-color: #903AFF;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+    color: black;
+    transition: font-size 0.5s;
+  }
+  /* #answer{
+    display: none;
+  } */
+
+  .open {
+    font-size: 80%;
+  }
+
+  .faq-image {
+    float: right;
+    width: 500px;
+    /* margin-left: 100px; */
+  }
+.faq-star{
+    margin-top: 70px;
+     width: 25px; 
+     margin-left: 120px;
+}
+  @media screen and (max-width: 760px) {
+    .faq-image {
+      /* float: right; */
+      width: 200px;
+      /* margin-left: 100px; */
+    }
+    .faq-star{
+        margin-top: 50px;
+         width: 25px; 
+         margin-left: 20px;
+    }
+    .toggle-button {
+      left: 200px;
+      bottom: 5px;
+    }
+  }

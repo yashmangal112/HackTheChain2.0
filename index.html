@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/images/logo - Copy.png" />
+    <script src="https://kit.fontawesome.com/fc9233d1a9.js" crossorigin="anonymous"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="./_app/immutable/assets/0.bc796b9e.css" rel="stylesheet">
+    <link href="./_app/immutable/assets/2.d054194b.css" rel="stylesheet">
+    <link href="./_app/immutable/assets/testi.css" rel="stylesheet">
+    <link rel="stylesheet" href="_app\immutable\assets\slider.css">
+    <link href="./_app/immutable/assets/vansh.css" rel="stylesheet">
+    <style>
+      @import "compass/css3";
+        html {
+            scroll-behavior: smooth;
+        }
+        .reveal {
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+
+        .reveal.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+.gopal{
+  justify-content: center;
+  nav-left: 100px;
+}
+        .revealx {
+            position: relative;
+            transform: translateX(-150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+
+        .revealx.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .revealxneg {
+            position: relative;
+            transform: translateX(150px);
+            opacity: 0;
+            transition: 1s all ease;
+        }
+
+        .revealxneg.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .btn-prnt {
+    width: 100%;
+    text-align: center;
+    display: grid;
+}
+
+        .popup {
+            display: none;
+            
+        }
+
+        /* Styles for the overlay background */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+        }
+        @keyframes floatUpDown {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    .codebasefloat{
+        animation: floatUpDown 3s infinite;
+    }
+
+    </style>
+
+    <title>HackTheChain 2.0</title>
+    <!-- HEAD_svelte-cobwjx_START -->
+    <meta name="description"
+        content="Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world, that's what we're all about!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="TuringHacX">
+    <meta property="og:description"
+        content="Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world, that's what we're all about!">
+    <meta property="og:image" content="/getlinked-banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="TuringHacX">
+    <meta property="twitter:description"
+        content="Our tech hackathon is a melting pot of visionaries, and its purpose is as clear as day: to shape the future. Whether you're a coding genius, a design maverick, or a concept wizard, you'll have the chance to transform your ideas into reality. Solving real-world problems, pushing the boundaries of technology, and creating solutions that can change the world, that's what we're all about!">
+    <!-- HEAD_svelte-cobwjx_END -->
+    <!-- HEAD_svelte-19cdwm1_START -->
+    <!-- HEAD_svelte-19cdwm1_END -->
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+</head>
+
+<body data-sveltekit-preload-data="hover" data-sveltekit-preload-code="viewport">
+    <div style="display: contents">
+        <div class="layout_wrapper overflow-clip bg-dark text-white selection:bg-pink selection:text-dark">
+            <div class="menu z-[90] bg-dark mi/n-h-screen fixed inset-0 flex items-center px-10 svelte-11ymms8"
+                style="display: none;"><button
+                    class="menu_close_btn border rounded-full w-6 h-6 p-8 hover:p-10 hover:rotate-90 transition-default flex items-center justify-center absolute top-0 right-0 m-12"
+                    data-svelte-h="svelte-1mag0bp">×</button>
+                <nav class="space-y-6">
+                    <ul class="capitalize space-y-4 w-full">
+                      <li class="group"><a class="block" href="#overview">overview</a> </li>
+                        <li class="group"><a class="block" href="#sponsors">Sponsors</a> </li>
+                        <li class="group"><a class="block" href="#judging">Judging</a> </li>
+                        <li class="group"><a class="block" href="#faqs">FAQs</a> </li>
+                        <li class="group"><a class="block" href="#contact">contact</a> </li>
+                    </ul> <a href="/register" class="btn" data-svelte-h="svelte-1h8eej">Register</a>
+                </nav>
+            </div>
+            <div class="min-h-screen fixed inset-0 overflow-hidden opacity-30"
+                style="background: radial-gradient(ellipse at bottom, #150E28 0%, #090a0f 100%); ">
+                <div class="star-layers 2xl:translate-x-[10%]" data-svelte-h="svelte-kref1s">
+                    <div id="stars" class="max-md:invisible svelte-1tq0o1b"></div>
+                    <div id="stars2" class="svelte-1tq0o1b"></div>
+                    <div id="stars3" class="svelte-1tq0o1b"></div>
+                </div>
+            </div>
+            <div class="overflow-hidden fixed inset-0 pointer-events-none" data-svelte-h="svelte-vqxfqk"> </div>
+            <div class="relative min-h-screen">
+                <div class="z-10 -space-y-20" data-svelte-h="svelte-1041exj"></div>
+                <div class="header-top"></div>
+                <header
+                    id="navbar" class="transition-default hover:opacity-100 hover:backdrop-blur-[1px] z-10 py-6 border-b border-white/[5%]"
+                    style="position: fixed ; width:100%; ">
+                    <div class="max-w-6xl container flex items-center justify-between">
+                        <a href="/" data-svelte-h="svelte-1rlyw48" class="flex relative -left-[20px]">
+                            <img src="images/logo.png" class="w-[90px] ">
+                            <h2 class="text-[26px] heading-1" style="font-family:Medula One; font-size: xx-large;">
+                                HackTheChain<span class="text-pink"> 2.0</span></h2>
+                        </a> <button class="md:hidden" id="popup" onclick="toggleDropdown()"><svg width="19" height="14" viewBox="0 0 19 14"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.35714 0H8.14286C8.50279 0 8.84799 0.1475 9.1025 0.410051C9.35701 0.672601 9.5 1.0287 9.5 1.4C9.5 1.7713 9.35701 2.1274 9.1025 2.38995C8.84799 2.6525 8.50279 2.8 8.14286 2.8H1.35714C0.997206 2.8 0.652012 2.6525 0.397498 2.38995C0.142984 2.1274 0 1.7713 0 1.4C0 1.0287 0.142984 0.672601 0.397498 0.410051C0.652012 0.1475 0.997206 0 1.35714 0ZM10.8571 11.2H17.6429C18.0028 11.2 18.348 11.3475 18.6025 11.6101C18.857 11.8726 19 12.2287 19 12.6C19 12.9713 18.857 13.3274 18.6025 13.5899C18.348 13.8525 18.0028 14 17.6429 14H10.8571C10.4972 14 10.152 13.8525 9.8975 13.5899C9.64298 13.3274 9.5 12.9713 9.5 12.6C9.5 12.2287 9.64298 11.8726 9.8975 11.6101C10.152 11.3475 10.4972 11.2 10.8571 11.2ZM1.35714 5.6H17.6429C18.0028 5.6 18.348 5.7475 18.6025 6.01005C18.857 6.2726 19 6.6287 19 7C19 7.3713 18.857 7.7274 18.6025 7.98995C18.348 8.2525 18.0028 8.4 17.6429 8.4H1.35714C0.997206 8.4 0.652012 8.2525 0.397498 7.98995C0.142984 7.7274 0 7.3713 0 7C0 6.6287 0.142984 6.2726 0.397498 6.01005C0.652012 5.7475 0.997206 5.6 1.35714 5.6Z"
+                                    fill="white"></path>
+                            </svg></button>
+                        <div id="popup1" class=" border border-gray-800 absolute left-[0%] top-[90%] bg-[#000000db] p-10 popup w-full text-center dropdown-content"><ul class="capitalize flex flex-col justify-center gap-8 transition-default">
+                         <li> <button class="dropdown-button" onclick="toggleDropdown()"><i class="fa-solid fa-square-xmark fa-xl"></i></button></li>
+                          <li><a href="#overview">overview</a> </li>
+                          <li><a href="#sponsors">Sponsors</a></li>
+                            <li><a href="#judging" >Judging</a> </li>
+                            <li><a href="#faqs">FAQs</a> </li>
+                            <li><a href="#contact" >contact</a> </li></ul>
+                        </div>
+
+                        <nav class="header-nav max-md:hidden flex gap-10 items-center transition-default">
+                            <ul class="capitalize flex items-center gap-8 transition-default menu">
+                              <li><a href="#overview" class="transition-default">overview</a></li>
+                              <li><a href="#sponsors" class="transition-default">Sponsors</a></li>
+                              <li><a href="#judging" class="transition-default">Judging</a></li>
+                              <li><a href="#faqs" class="transition-default">FAQs</a></li>
+                              <li><a href="#contact" class="transition-default">contact</a></li>
+                            </ul> <a href="/" class="btn" data-svelte-h="svelte-q64ulc">Download Brochure</a>
+                        </nav>
+                    </div>
+                </header>
+                <main class="divide-y divide-white/[18%]">
+                    <div class="relative" data-svelte-h="svelte-1wsr6m0">
+                        <div
+                            class="bg-purple opacity-60 -top-10 left-[500px] absolute w-[200px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <section id="hero" class="max-lg:text-center pb-0 relative revealx section">
+                            <div class="relative max-w-6xl container lg:grid grid-cols-2 items-center space-y-4" style="padding-top: 40px;">
+                                <div class="lg:absolute -top-10 right-0">
+                                    <h2 class="font-bold text-[20px] lg:text-[24px] italic lg:px-4 relative"></h2>
+                                </div>
+                                <div class="space-y-4 relative" data-animate data-animation-direction="up"
+                                    data-animation-delay=".2">
+                                    <div class="pointer-events-none absolute inset-0"><img src="./images/stars/star.png"
+                                            alt="star" class="not-sr-only -top-8 left-0 absolute animate-pulse scale-75"
+                                            loading="lazy"> <img src="./images/stars/star.png" alt="star" loading="lazy"
+                                            class="not-sr-only -top-12 right-0 absolute animate-pulse scale-50"> <img
+                                            src="./images/stars/star.png" alt="star" loading="lazy"
+                                            class="not-sr-only bottom-0 right-32 z-10 absolute animate-pulse scale-50">
+                                    </div>
+                                    <div class="space-y-0">
+                                        <h1 class="title-1 relative"><img src="./images/bulb.png" alt="bulb"
+                                                class="  md:-top-14 right-1 md:right-4 absolute "
+                                                loading="lazy"> <span class ="lg:text-[55px] text-1xl text-4xl">CodeBase IIIT Kota</span>
+                                                <div class="text-purple text-center text-2xl my-4 ">Presents</div>
+                                            <span class="text-4xl  lg:text-[55px]">HackTheChain 2.0 </span><span class="text-pink"></span><span
+                                                class="text-[30px]">🔗</span>
+                                        </h1>
+                                        <h3 class="max-w-md max-lg:container max-lg:max-w-lg biggest text-pink my-7 pt-7 lg:text-2xl text-4xl text-center ">
+                                          The Biggest Hackathon in Kota City 
+                                        </h3>
+                                        <p class="max-w-md max-lg:container max-lg:max-w-lg text-center italic pt-5">
+                                            Join the ultimate hackathon for developers of all skill levels!
+                                        </p>
+                                        <p class="max-w-md max-lg:container max-lg:max-w-lg text-center italic pt-1">
+                                            Hack your way to success at HackTheChain 2.0!
+                                        </p>
+                                    </div>
+
+                                    <div class="btn-prnt">
+                                        
+                                            <button class="bla-btn" onclick="window.open('https://hackthechain2.devfolio.co')" target="_blank">
+                                                <img src="./images/devfolio-icon.png" height="40" width="40" style="margin: 6px;" alt="devfolio-icon " srcset="">
+                                                <span>Register Here</span>
+                                            </button>
+                                            <!-- <div 
+                                              class="apply-button" 
+                                              data-hackathon-slug="hackthechain2"
+                                              data-button-theme="light" 
+                                              style="height: 44px; width: 312px">      
+                                            </div> -->
+                                        
+                                    </div>
+                                    <p class="pt-1"></p>
+                                </div>
+                                <div class="max-xl:lg:min-h-[80vh] relative flex items-center codebasefloat" > <img
+                                        src="./images/Codebasepng2.png" data-tilt  alt="hero stary field"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <section id="overview"  data-svelte-h="svelte-76namw" class="reveal section">
+                        <div
+                            class="max-w-6xl container grid lg:grid-cols-2 max-lg:gap-16 max-lg:text-center items-center">
+                            <div class="relative flex justify-center"><img src="./images/arrow.png" alt="arrow"
+                                    class="not-sr-only -bottom-16 right-42 md:right-24 absolute scale-75"
+                                    loading="lazy">
+                                <div class="pointer-events-none absolute inset-0"><img src="./images/stars/star2.png"
+                                        alt="star" loading="lazy"
+                                        class="not-sr-only top-12 absolute animate-pulse scale-50"></div> <img
+                                    data-animate data-animation="pop" data-tilt src="./images/the-big-idea.webp"
+                                    alt="infographic showing different elements and how they link together to form an idea">
+                            </div>
+                            <div class="relative space-y-4">
+                                <div class="pointer-events-none absolute inset-0"><img src="./images/stars/star2.png"
+                                        alt="star" loading="lazy"
+                                        class="not-sr-only top-8 right-0 absolute animate-pulse scale-50"></div>
+                                <h2 class="heading-1"><span data-animate-text
+                                        data-animation-direction="left">Introduction of HackTheChain</span> <span
+                                        data-animate-text data-animation-delay=".2" data-animation-direction="left"
+                                        data-animation-selection="letters" class="text-purple">2.0</span></h2>
+                                <p data-animate-text data-animation-direction="up">Welcome to HackTheChain 2.0, <b class="text-purple"> biggest hackathon in Kota City</b>, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota. The hackathon will be held from <b class="text-purple">27th to 29th January, 2024</b>. The event will be held virtually on <b class="text-purple">Devfolio</b> with a prize pool of <b class="text-purple">₹1,50,000</b>.
+                                  It serves as a dynamic platform for students nationwide to converge, exhibit their talents, and glean insights from industry experts within a competitive and collaborative framework. Our aim is to nurture innovation, creativity, and problem-solving skills while fostering a culture of collaboration and community development.
+                                  Our hackathon is unique in that it offers participants two different tracks to choose from: <b class="text-purple">the Blockchain Track</b> and the<b class="text-purple"> Open-to-All Track</b>. In the Blockchain Track, participants will have the opportunity to build decentralized applications and explore the full potential of blockchain technology. In the Open-to-All Track, participants are free to explore any domain of their choosing and can build web or mobile applications, data analysis tools, or anything else they can think of.
+                                  HackTheChain is more than just a hackathon; it's an opportunity to network with like-minded individuals, gain valuable experience, and win exciting prizes. We provide participants with access to cutting-edge tools and technology, mentorship from industry experts, and a supportive community to help bring their ideas to life.
+                                  Join us for an unforgettable weekend of coding, learning, and fun. <b class="text-purple">Register</b> now and become a part of the HackTheChain community!</p>
+                                  
+                            </div>
+                        </div>
+                    </section>
+                    <section class="relative" data-svelte-h="svelte-1yzj429 section">
+                        <div
+                            class="bg-purple opacity-20 top-[10%] left-[300px] absolute w-[500px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                            class="bg-purple opacity-20 bottom-[10%] -right-[100px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-6xl container grid lg:grid-cols-2 max-lg:text-center items-center">
+                            <div class="relative space-y-4 revealx">
+                                <div class="pointer-events-none absolute inset-0 ">
+                                    <div class="opacity-50"><img src="./images/stars/star.png" alt="star" loading="lazy"
+                                            class="not-sr-only top-0 left-64 absolute animate-pulse scale-75"></div>
+                                    <img src="./images/stars/star.png" alt="star" loading="lazy"
+                                        class="not-sr-only -bottom-4 -right-14 absolute animate-pulse scale-75">
+                                </div>
+                                <h2 class="heading-1"><span data-animate-text>Rules and</span> <span
+                                        class="block text-purple" data-animation-selection="letters" data-animate-text
+                                        data-animation-delay=".2">Guidelines</span></h2>
+                                <p data-animate-text data-animation-direction="up">Our tech hackathon is a melting pot
+                                    of visionaries, and its purpose is as clear as day: to shape the future. Whether
+                                    you&#39;re a coding genius, a design maverick, or a concept wizard, you&#39;ll have
+                                    the chance to transform
+                                    your ideas into reality. Solving real-world problems, pushing the boundaries of
+                                    technology, and creating solutions that can change the world, that&#39;s what
+                                    we&#39;re all about!</p>
+                            </div>
+                            <div class="max-lg:order-first revealxneg"><img data-animate data-animation="pop"
+                                    data-animation-direction="left" class="codebasefloat" src="./images/woman-with-tab.webp"
+                                    alt="woman with tablet"></div>
+                        </div>
+                    </section>
+                    <!-- time line section starts  -->
+                    <!-- <section id="timeline" data-svelte-h="svelte-jyxsa4" class="section h-screen pt-10 max-sm:h-[50vh] lg:max-h-[90vw]" >
+                        <div class=" flex flex-col justify-center items-center ">
+                            <h2 class=" text-[2rem]  xl:text-[3rem]" style="font-family: clash display, impact, serif;font-weight: 700 ;" data-animate-text data-animation-selection="letters" data-animation-direction="down">Time<span class="text-purple">line</span></h2>
+                            <div class="flex relative w-full md:w-[50rem] w-[30rem] justify-center ">
+                                <img src="images/timeline.png" alt="Timeline Image" class="h-[80vh] max-sm:h-[32vh] lg:max-h-[70vw]">
+                            </div>  
+                        </div>
+                    </section> -->
+                    <!-- time line section ends -->
+
+                      <!-- rewards section start -->
+                      <section id="rewards" class="relative section" data-svelte-h="svelte-9jqryo">
+                        <div
+                            class="bg-purple opacity-20 top-[10%] left-[100px] absolute w-[500px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                            class="bg-purple opacity-20 bottom-[10%] -right-[100px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-6xl container lg:grid grid-cols-2 max-lg:space-y-12">
+                            <div class="text-center lg:hidden">
+                                <h2 class="heading-1"><span class="heading-1" data-animate-text>Prizes and</span> <span
+                                        data-animate-text data-animation-selection="letters"
+                                        class="text-purple block">Rewards</span></h2>
+                                <p data-animate-text>Highlight of the prizes or rewards for winners and for
+                                    participants.</p>
+                            </div>
+                          <div class="gopal">  <div class="flex justify-center revealxneg relative "><img data-animate data-animation="pop"
+                                    src="./images/trophy.webp" alt="trophy for winner" ></div>
+                                    </div>
+                            <div class="space-y-32 revealx">
+                                <div class="max-lg:hidden">
+                                    <h2 class="heading-1"><span data-animate-text data-animation-direction="left">Prizes
+                                            and</span> <span data-animate-text data-animation-selection="letters"
+                                            data-animation-direction="left" data-animation-delay=".2"
+                                            class="text-purple block">Rewards</span></h2>
+                                    <p data-animate-text data-animation-direction="up" data-animation-delay=".4">
+                                        Highlight of the prizes or rewards for winners and for participants.</p>
+                                </div>
+                                <ul data-animate data-animation-direction="up"
+                                    class="flex items-center justify-center gap-4 text-2xl font-bold text-center relative">
+                                    <li
+                                        class="relative pt-20 pb-10 bg-pink/[12%] px-2 sm:px-6 border border-pink rounded-md">
+                                        <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
+                                            <img src="./images/silver_medal.webp" alt="silver medal" class="w-[70%]">
+                                        </div>
+                                        <h3>2nd</h3>
+                                        <p class="text-sm md:text-lg font-semibold">Place</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize Cash</span>
+                                        <p class="text-pink text-[16px] md:text-lg">₹3,000</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize worth</span>
+                                        <p class="text-pink text-[16px] md:text-lg">₹1,40,000</p>
+                                    </li>
+
+                                    <li
+                                        class="relative pt-32 pb-10 bg-purple/[12%] px-2 sm:px-6 border border-purple rounded-md">
+                                        <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
+                                            <img src="./images/gold_medal.webp" alt="gold medal">
+                                        </div>
+                                        <h3>1st</h3>
+                                        <p class="text-sm md:text-lg font-semibold">Place</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize Cash</span>
+                                        <p class="text-purple text-[16px] md:text-lg">₹5,000</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize worth</span>
+                                        <p class="text-purple text-[16px] md:text-lg">₹1,80,000</p>
+                                    </li>
+                                    <li
+                                        class="relative pt-20 pb-10 bg-pink/[12%] px-2 sm:px-6 border border-pink rounded-md">
+                                        <div class="absolute inset-x-0 top-0 translate-y-[-50%] flex justify-center">
+                                            <img src="./images/bronze_medal.webp" alt="bronze medal" class="w-[70%]">
+                                        </div>
+                                        <h3>3rd</h3>
+                                        <p class="text-sm md:text-lg font-semibold">Place</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize Cash</span>
+                                        <p class="text-pink text-[16px] md:text-lg">₹2,000</p>
+                                        <span class="text-sm md:text-lg font-semibold">Prize worth</span>
+                                        <p class="text-pink text-[16px] md:text-lg">₹1,10,000</p>
+                                    </li>
+                                </ul>
+                            </div>
+                          <!-- </div> -->
+                        </div>
+                    </section>
+                    <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                    <!-- rewards section ends -->
+
+
+
+            
+            
+            
+            
+            <!--Sponsers -->
+                      <section id="sponsors" class="relative section " data-svelte-h="svelte-76namw">
+                        <div
+                          class="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                          class="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-lg container text-center space-y-4" data-svelte-h="svelte-17yqm8j">
+                          <h2 class="heading-1" data-animate-text data-animation-selection="letters" data-animation-direction="up">
+                            Sponsors
+                          </h2>
+                          <p data-animate-text data-animation-delay=".5" data-animation-direction="up">
+                            HackTheChain 2.0 hackathon is honored to have the following major
+                            companies as its partners and sponsors
+                          </p>
+                        </div>
+            
+                        <!-- Platinum -->
+                        <div class="grid lg:grid-cols-3 sm:grid-cols-1 mt-8 px-4">
+                          <div class="max-w-6xl px-6 container text-center space-y-8">
+                            <h2 class="mt-6" style="font-size: 40px; color: silver; font-weight: bold;">Platinum</h2>
+                            <div class="w-full border border-pink rounded-sm min-h-[100px] flex items-center justify-center p-10"
+                              data-animate data-animation-direction="down">
+                              <ul class="grid sm:grid-rows-2 gap-10 md:gap-10 items-center relative">
+                                <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/DEVFOLIO.webp" alt="Devfolio LOGO" />
+                                </li>
+                                <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/POLYGON.webp" alt="POLYGON LOGO" />
+                                </li>
+                                <!-- <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/ECHO3D.png" alt="ECHO3D LOGO" />
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+            
+            
+                          <!--Diamond  -->
+                          <div class="max-w-6xl px-6 h-6xl container text-center space-y-8">
+                            <h2 class="mt-6" style="font-size: 40px; color: #009c9e; font-weight: bold;">Diamond</h2>
+                            <div class="w-full border border-pink rounded-sm min-h-[100px] flex items-center justify-center p-10"
+                              data-animate data-animation-direction="down">
+                              <ul class="grid sm:grid-rows-1 gap-10 md:gap-10 items-center relative">
+                                <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/replit.png" alt="ECHO3D LOGO" />
+                                </li>
+                                <!-- <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/STANDOUTSTICKER.png" alt="STANDOUTSTICKER LOGO" />
+                                </li>
+                                <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/WA.png" alt="WA LOGO" />
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+
+                          <!-- Gold -->
+                          <div class="max-w-6xl px-6 container text-center space-y-8">
+                            <h2 class="mt-6" style="font-size: 40px; color: #ccac00; font-weight: bold;">Gold</h2>
+                            <div class="w-full border border-pink rounded-sm min-h-[100px] flex items-center justify-center p-10"
+                              data-animate data-animation-direction="down">
+                              <ul class="grid grid-rows-1 gap-10 md:gap-10 items-center relative">
+            
+                                <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/wolfram.png" alt="POLYGON LOGO" />
+                                </li>
+                                <!-- <li class="flex items-center justify-center md:px-10">
+                                  <img class="ps-img" src="./images/partners/REPLIT.webp" alt="REPLIT LOGO" />
+                                </li> -->
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+            
+            
+                      <!-- Other Sponsers -->
+                      <section id="sponsors" class="relative section">
+                        <div
+                          class="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                          class="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-6xl container text-center space-y-8">
+                          <div class="max-w-lg container space-y-4" data-svelte-h="svelte-17yqm8j">
+                            <h2 class="heading-1" data-animate-text data-animation-selection="letters"
+                              data-animation-direction="up">
+                              Other Sponsors
+                            </h2>
+                          </div>
+                          <div class="w-full border border-pink rounded-sm min-h-[100px] flex items-center justify-center p-10"
+                            data-animate data-animation-direction="down">
+                            <ul class="grid sm:grid-cols-3 gap-10 md:gap-10 items-center relative">
+                              <li class="flex items-center justify-center md:px-10">
+                                <a href="https://www.taskade.com" target="_blank"><img class="ps-img" src="./images/partners/taskade.png" alt="taskade LOGO" /></a>
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/InterviewBuddy.png" alt="InterviewBuddy LOGO" />
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/ECHO3D.png" alt="ECHO3D LOGO" />
+                              </li>
+                              <!-- <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/axure.png" alt="STANDOUTSTICKER LOGO" />
+                              </li> -->
+                              <!-- <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/wolfram.png" alt="WA LOGO" />
+                              </li> -->
+                              <!-- <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/DEVFOLIO.webp" alt="DEVFOLIO LOGO" />
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/POLYGON.webp" alt="POLYGON LOGO" />
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img class="ps-img" src="./images/partners/REPLIT.webp" alt="REPLIT LOGO" />
+                              </li> -->
+                              <div class="max-sm:invisible absolute inset-0 pointer-events-none" data-svelte-h="svelte-13gy5yb">
+                                <div class="absolute inset-0 flex items-center"></div>
+                                <div class="px-10 absolute inset-0 flex items-center justify-around"></div>
+                                <div class="px-10 absolute inset-0 flex items-center justify-around">
+                                  <span class="rounded-full my-auto h-6 w-6 bg-dark"></span>
+                                  <span class="rounded-full my-auto h-6 w-6 bg-dark"></span>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+                        </div>
+                      </section>
+            
+
+                      
+                      <!-- Partners -->
+                      <!-- <section class="relative">
+                        <div
+                          class="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                          class="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-6xl container text-center space-y-8">
+                          <div class="max-w-lg container space-y-4" data-svelte-h="svelte-17yqm8j">
+                            <h2 class="heading-1" data-animate-text data-animation-selection="letters"
+                              data-animation-direction="up">
+                              Campus Partners
+                            </h2>
+                            <p data-animate-text data-animation-delay=".5" data-animation-direction="up">
+                              HackTheChain 2.0 hackathon is honored to have the collaboration with major colleges as its partners
+                            </p>
+                          </div>
+                          <div class="w-full border border-pink rounded-sm min-h-[100px] flex items-center justify-center p-10"
+                            data-animate data-animation-direction="down">
+                            <ul class="grid sm:grid-cols-3 gap-10 md:gap-20 items-center relative">
+                              <li class="flex items-center justify-center md:px-10">
+                                <img src="./images/partners/STANDOUTSTICKER.png" alt="MLH LOGO" />
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img src="./images/partners/GITHUB.png" alt="GITHUB LOGO" />
+                              </li>
+                              <li class="flex items-center justify-center md:px-10">
+                                <img src="./images/partners/ECHO3D.png" alt="ECHO3D LOGO" />
+                              </li>
+                              <div class="max-sm:invisible absolute inset-0 pointer-events-none" data-svelte-h="svelte-13gy5yb">
+                                <div class="absolute inset-0 flex items-center"></div>
+                                <div class="px-10 absolute inset-0 flex items-center justify-around"></div>
+                                <div class="px-10 absolute inset-0 flex items-center justify-around">
+                                  <span class="rounded-full my-auto h-6 w-6 bg-dark"></span>
+                                  <span class="rounded-full my-auto h-6 w-6 bg-dark"></span>
+                                </div>
+                              </div>
+                            </ul>
+                          </div>
+                        </div>
+                      </section> -->
+            
+
+
+                      <!-- Judging section start -->
+                      <section id="judging" class="relative section">
+                        <div
+                          class="bg-purple opacity-20 top-[10%] left-[100px] absolute w-[500px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div
+                          class="bg-purple opacity-20 bottom-[10%] -right-[100px] absolute w-[300px] rounded-full blur-3xl aspect-square">
+                        </div>
+                        <div class="max-w-6xl container lg:grid grid-cols-2 max-lg:text-center items-center">
+                          <div class="relative" data-svelte-h="svelte-iibzj">
+                            <div class="pointer-events-none absolute inset-0"><img src="./images/stars/star2.png" alt="star"
+                                loading="lazy" class="not-sr-only -top-20 left-20 absolute animate-pulse scale-50">
+                              <div class="opacity-30 absolute inset-0 flex items-center justify-center"><img
+                                  src="./images/stars/star.png" alt="star" loading="lazy"
+                                  class="not-sr-only animate-pulse scale-50"></div> <img src="./images/stars/star2.png" alt="star"
+                                loading="lazy" class="not-sr-only -bottom-4 right-6 absolute animate-pulse scale-50">
+                            </div>
+                            <img data-animate data-animation="pop" class="codebasefloat" src="./images/two-people-doing-some-analysis.webp"
+                              alt="two people doing some analysis">
+                          </div>
+                          <div class="space-y-8">
+                            <h2 class="heading-1" data-svelte-h="svelte-1j99wjo"><span data-animate-text
+                                data-animation-direction="left">Judging Criteria</span> <span data-animate-text
+                                data-animation-direction="left" data-animation-selection="letters" data-animation-delay=".2"
+                                class="block text-purple">Key attributes</span></h2>
+                            <ul class="space-y-4" data-animate data-animation-delay=".5" data-animation-direction="left">
+                              <li>
+                                <h3  class="text-[#ed24ad] font-bold inline">Innovation and Creativity:</h3>
+                                <p class="inline"> Judges will evaluate the originality of the project,
+                                  including
+                                  the use of new technologies and the ability to solve a problem
+                                  in a new way</p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">
+                                  Technical Ability
+                                  :</h3>
+                                <p class="inline">
+                                  Judges will evaluate the technical ability of the team,
+                                  including the ability to use new technologies and the ability to
+                                  solve problems.
+                                </p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">Impact and Relevance:</h3>
+                                <p class="inline">
+                                  Judges will evaluate the potential impact the project can have
+                                  on the industry or society in general.
+                                </p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">
+                                  User Experience
+                                  :</h3>
+                                <p class="inline">
+                                  Judges will evaluate the user experience of the project,
+                                  including how well the team presents and demonstrates.
+                                </p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">Presentation:</h3>
+                                <p class="inline">
+                                  Judges will evaluate how well the team presents and demonstrates
+                                  the project, including how well the team presents and
+                                  demonstrates.
+                                </p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">Completion:</h3>
+                                <p class="inline">
+            
+                                  Judges will evaluate the quality of the code, including code
+                                  structure, documentation, and best coding practices.
+                                </p>
+                              </li>
+                              <li>
+                                <h3 class="text-[#ed24ad] font-bold inline">Code Quality:</h3>
+                                <p class="inline">
+            
+                                  Judges will evaluate the quality of the code, including code
+                                  structure, documentation, and best coding practices.
+            
+                                </p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <hr class="faq-above" />
+                      </section>
+                      <!-- Judging section end -->
+
+
+                      <!-- glimpse section  -->
+                    <section id="glimpse" data-svelte-h="svelte-jyxsa4" class="section flex flex-col justify-around items-center pt-[4%] pb-0 h-[100vh] max-sm:h-[70vh] max-md:h-[100vh] lg:max-h-[70vw]">
+                      <h2 class=" text-[2rem] xl:text-[3rem] text-center" style="font-family: clash display, impact, serif;font-weight: 700; " data-animate-text data-animation-selection="letters" data-animation-direction="down">HackTheChain <span class="text-purple">Glimpse</span></h2>
+                      <div class=" flex max-md:flex-col justify-evenly items-center h-[90vh] w-full" >
+                          <div>
+                            <iframe class="w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg" src="https://www.youtube.com/embed/o8dGYnnQFCo?si=MpB6ZZNU3CU-NBEj" title="HackTheChain 2023 After Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                          <div >
+                                 <div class="slideshow-container ">
+                                      <div class="mySlides fade text-align:center">
+                                        <div class="numbertext">1 / 3</div>
+                                        <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_2.jpeg');background-repeat: no-repeat;  background-size: cover;" >
+                                          <div style="text-align:center;position:relative;" class="pb-2" >
+                                              <span class="dot" onclick="currentSlide(1)"></span> 
+                                              <span class="dot" onclick="currentSlide(2)"></span> 
+                                              <span class="dot" onclick="currentSlide(3)"></span> 
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="mySlides fade text-align:center">
+                                          <div class="numbertext">2 / 3</div>
+                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_3.jpg');background-repeat: no-repeat;  background-size: cover;" >
+                                            <div style="text-align:center;position:relative;" class="pb-2" >
+                                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                              </div>
+                                          </div>
+                                        </div>
+                                      
+                                        <div class="mySlides fade text-align:center">
+                                          <div class="numbertext">3 / 3</div>
+                                          <div class="flex items-end justify-center simg w-[40vw] h-[calc(40vw*0.72)] max-sm:w-[70vw] max-sm:h-[calc(70vw*0.52)] rounded-lg"style="background-image: url('images/glimpse_1.jpg');background-repeat: no-repeat;  background-size: cover;" >
+                                            <div style="text-align:center;position:relative;" class="pb-2" >
+                                                <span class="dot" onclick="currentSlide(1)"></span> 
+                                                <span class="dot" onclick="currentSlide(2)"></span> 
+                                                <span class="dot" onclick="currentSlide(3)"></span> 
+                                              </div>
+                                          </div>
+                                        </div>
+                                      
+                                      <div ><a class="prev " onclick="plusSlides(-1)">❮</a></div>
+                                      <div ><a class="next " onclick="plusSlides(1)">❯</a></div>
+                               </div>
+                           </div>
+                          </div>
+                      </div>
+                  </section>
+                  <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                  <!-- glimpse section ends -->
+
+                  <!-- testimonials section start -->
+                  <section id="testimonials" class="testimonials section">
+                      <div class="container">
+                          <h2 class=" text-[2rem] xl:text-[3rem] text-center" style="font-family: clash display, impact, serif;font-weight: 700; " data-animate-text data-animation-selection="letters" data-animation-direction="down">Testi<span class="text-purple">monials</span></h2>  
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div id="customers-testimonials" class="owl-carousel  " >
+                  
+                              <!--TESTIMONIAL 1 -->
+                              <div class="item">
+                                  <div class="sh-p ">
+                                <div class="shadow-effect">
+                                  <img class="img-circle" src="./images/testimonials/himanshu.jpg" alt="">
+                                  <p> HackTheChain was an exhilarating experience! From the engaging challenges to the supportive community, it's a must for any developer. Eagerly anticipating the next edition!</p>
+                                <div class="testimonial-name"> - Himanshu Chittora, Organizer HackTheChain</div>
+                  
+                                </div>
+                                </div>
+                              </div>
+                              <!--END OF TESTIMONIAL 1 -->
+                              <!--TESTIMONIAL 2 -->
+                              <div class="item">
+                                  <div class="sh-p">
+                                <div class="shadow-effect">
+                                  <img class="img-circle" src="./images/testimonials/vinamra.jpg" alt="">
+                                  <p> Thrilled to lead 'HackTheChain',a transformative event uniting diverse thinkers in a celebration of tech innovation.Last year's success fuels anticipation for an even more exhilarating second edition.</p>
+                                <div class="testimonial-name"> - Vinamra Vashishth, Organizer HackTheChain</div>
+                  
+                                </div></div>
+                              </div>
+                              <!--END OF TESTIMONIAL 2 -->
+                              <!--TESTIMONIAL 3 -->
+                              <div class="item">
+                                  <div class="sh-p">
+                                <div class="shadow-effect">
+                                  <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                                  <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                                <div class="testimonial-name"> - LARA ATKINSON</div>
+                  
+                                </div></div>
+                              </div>
+                              <!--END OF TESTIMONIAL 3 -->
+                              <!--TESTIMONIAL 4 -->
+                              <div class="item">
+                                  <div class="sh-p">
+                                <div class="shadow-effect">
+                                  <img class="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="">
+                                  <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource </p>
+                                <div class="testimonial-name"> - IAN OWEN</div>
+                  
+                                </div></div>
+                                
+                              </div>
+                              <!--END OF TESTIMONIAL 4 -->
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </section>
+                    <hr style="height:1px;border:none;color:#333;background-color:#333;">
+                    <!-- testimonials section ends -->
+
+ 
+                    <!-- faqs section start -->
+            
+                      <section id="faqs" class="faq relative section">
+                        <div class="faq-container">
+                          <div class="faq-heading">
+                            <div class="pointer-events-none absolute inset-0 faq-star" bis_skin_checked="1"><img
+                                src="./images/stars/star2.png" alt="star" loading="lazy" class="not-sr-only animate-pulse"></div>
+                            <div class="heading">
+                              <h2>
+                                <span data-animate-text>Frequently Asked</span>
+                                <h2><span style="color:#903AFF">Questions</span></h2>
+                              </h2>
+                            </div>
+                            <div>
+                              <p style="font-size: 17px;">
+                                <span>We got answers to the questions that you might want to
+                                  ask about</span>
+                                  <span style="font-weight: bolder;"> HackTheChain<span class="text-pink"> 2.0</span></span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="faq-question ques-1" onclick="toggleAnswer(1)"> Can I participate remotely?</div>
+                          <button class="toggle-button btn-1" onclick="toggleAnswer(1)">+</button>
+                          <div class="faq-answer" id="answer1">HackTheChain 2.0 is a hybrid event, so you can participate from anywhere
+                            in the world!</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-2" onclick="toggleAnswer(2)"> I am a beginner, can I participate?</div>
+                          <button class="toggle-button btn-2" onclick="toggleAnswer(2)">+</button>
+                          <div class="faq-answer" id="answer2"> Yes, absolutely! HackTheChain 2.0 is open to participants of all skill
+                            levels, including beginners. It's a great opportunity to learn and gain experience, meet new people, and
+                            work on a fun project. We encourage everyone to participate, regardless of their experience level.</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-3" onclick="toggleAnswer(3)"> How much does it cost to participate?</div>
+                          <button class="toggle-button btn-3" onclick="toggleAnswer(3)">+</button>
+                          <div class="faq-answer" id="answer3">HackTheChain 2.0 is completely free to participate in. All you need is a
+                            computer and an internet connection!</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-4" onclick="toggleAnswer(4)">What is the maximum team size?</div>
+                          <button class="toggle-button btn-4" onclick="toggleAnswer(4)">+</button>
+                          <div class="faq-answer" id="answer4"> The maximum team size is 4 members. You can form a team with your
+                            friends or you can join a team with other participants.</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-5" onclick="toggleAnswer(5)"> How to register for HackTheChain 2.0?</div>
+                          <button class="toggle-button btn-5" onclick="toggleAnswer(5)">+</button>
+                          <div class="faq-answer" id="answer5"> You can register for HackTheChain 2.0 by registering on Devfolio. You
+                            can find the link to register on the home page.</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-6" onclick="toggleAnswer(6)"> Can I participate without a team?</div>
+                          <button class="toggle-button btn-6" onclick="toggleAnswer(6)">+</button>
+                          <div class="faq-answer" id="answer6"> Yes, you can participate without a team. You can join a team with
+                            other participants or you can form a team with your friends.</div>
+                          <hr class="faq-hr" />
+                          <div class="faq-question ques-7" onclick="toggleAnswer(7)">Is HackTheChain 2.0 only for blockchain developers?
+                          </div>
+                          <button class="toggle-button btn-7" onclick="toggleAnswer(7)">+</button>
+                          <div class="faq-answer" id="answer7"> No, HackTheChain 2.0 is not only for blockchain developers. Although it
+                            has a track related to blockchain, it is an open hackathon and welcomes participants from all
+                            backgrounds and skill levels.</div>
+                            <hr class="faq-hr" />
+                        </div>
+                        <div class="faq-image">
+                          <div class="question">
+                            <img data-animate data-animation="pop" data-animation-direction="left" class="faq-image codebasefloat" src="./images/man-thinking.webp"
+                            alt="man sitting on cloud and thinking" />
+                        </div>
+                        <!-- <script src="custom/vindex.js"></script> -->
+                      </section>
+                    </main>
+                    <footer id="contact" class="bg-[#100B20] text-sm py-12 sticky">
+                      <div class="max-w-6xl container space-y-6">
+                        <div class="max-lg:space-y-8 lg:grid grid-cols-2">
+                          <div class="max-lg:space-y-8 space-y-16" data-svelte-h="svelte-c2831w">
+                            <div class="space-y-2">
+                              <a href="/">
+                                <h2 class="text-[26px] heading-1">
+                                  HackTheChain<span class="text-pink"> 2.0</span>
+                                </h2>
+                              </a>
+                              <p class="max-w-sm">
+                                The biggest hackathon in Kota City, presented by the IIIT Kota in association with Codebase IIIT Kota. This event on Devfolio promises a monumental experience, fostering innovation and collaboration. Notably, it stands as the annual flagship Hackathon of IIIT Kota, promising an immersive experience for all participants.
+                              </p>
+                            </div>
+                            <ul class="flex items-center divide-x-2 divide-purple"></ul>
+                          </div>
+                          <div class="max-lg:space-y-8 lg:grid grid-cols-2">
+                            <div class="space-y-4">
+                              <nav class="space-y-2" data-svelte-h="svelte-1e01zkd">
+                                <h2 class="font-bold text-pink">Useful Links</h2>
+                                <ul class="space-y-2">
+                                  <li><a href="#overview">overview</a> </li>
+                                  <li><a href="#sponsors">Sponsors</a></li>
+                                  <li><a href="#judging">Judging</a></li>
+                                  <li><a href="#faqs">FAQs</a></li>
+                                  <li>
+                                    <a href="/register">Apply with devfolio</a>
+                                    <!-- <div class="apply-button" data-hackathon-slug="turinghacx" data-button-theme="light"
+                                      style="height: 44px; width: 312px"></div> -->
+                                    <div 
+                                      class="apply-button" 
+                                      data-hackathon-slug="hackthechain2" 
+                                      data-button-theme="light"
+                                      style="height: 44px; width: 312px"
+                                    ></div>
+                                  </li>
+                                </ul>
+                              </nav>
+                              <div class="flex gap-4 items-center">
+                                <h2 class="font-bold text-pink" data-svelte-h="svelte-1y3lo5">
+                                  Follow us
+                                </h2>
+                                <ul class="flex items-center gap-2 justify-center">
+                                  <li style="
+                                        width: 30px !important;
+                                        height: 30px !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 3px;
+                                      ">
+                                    <a href="https://www.instagram.com/iiitkota_codebase/" title="share on instagram"
+                                      target="_blank"><img src="./images/socials/instagram.webp" alt="instagram icon" /></a>
+                                  </li>
+                                  <li style="
+                                        width: 30px !important;
+                                        height: 30px !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 3px;
+                                      ">
+                                    <a href="https://twitter.com/iiitkcodebase" title="share on x" target="_blank"><img
+                                        src="./images/socials/x.webp" alt="x icon" /></a>
+                                  </li>
+                                  <li style="
+                                        width: 30px !important;
+                                        height: 30px !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 3px;
+                                      ">
+                                    <a href="https://www.linkedin.com/groups/9010020/" title="share on linkedIn"
+                                      target="_blank"><img src="./images/socials/linkedIn.webp" alt="linkedIn icon" /></a>
+                                  </li>
+                                  <li style="
+                                        width: 30px !important;
+                                        height: 30px !important;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin: 3px;
+                                      ">
+                                    <a href="https://discord.gg/yRW3DVbF" title="share on discord" target="_blank"><img
+                                        src="./images/socials/discord.webp" alt="discord icon" /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <nav class="space-y-2" data-svelte-h="svelte-2r9x4r">
+                              <h2 class="font-bold text-pink">
+                                <a href="#contact-us">Contact Us</a>
+                              </h2>
+                              <ul class="space-y-2">
+                                <li>
+                                  <a href="tel:+917014151228">+91 7014151228</a><br />
+                                  <a href="mailto:codebase@iiitkota.ac.in">codebase@iiitkota.ac.in</a><br/>
+                                  <a href="https://www.linkedin.com/in/yashmangal112" title="share on linkedIn"
+                                      target="_blank"><img class="my-2 text-lg"  src="./images/socials/linkedIn.webp" alt="linkedIn icon" /></a>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="text-center py-4" data-svelte-h="svelte-4ttcq9">
+                          <p>All rights reserved. © HackTheChain</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+
+        <script>
+          
+            {
+                __sveltekit_18ttasc = {
+                    base: new URL(".", location).pathname.slice(0, -1),
+                    env: {}
+                };
+
+                const element = document.currentScript.parentElement;
+
+                const data = [null, null];
+
+                Promise.all([
+                    import("./_app/immutable/entry/start.c5e35d7e.js"),
+                    import("./_app/immutable/entry/app.b070fc3e.js")
+                ]).then(([kit, app]) => {
+                    kit.start(app, element, {
+                        node_ids: [0, 2],
+                        data,
+                        form: null,
+                        error: null
+                    });
+                });
+
+
+            }
+
+        </script>
+        <script>
+     function toggleDropdown()
+     {
+        var dropDown = document.getElementById("popup1");
+
+        // Toggle the visibility of the element
+        if (dropDown.style.display === "none") {
+            dropDown.style.display = "block";
+        } else {
+            dropDown.style.display = "none";
+        }
+    }
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+            function revealx() {
+                var reveals = document.querySelectorAll(".revealx");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+            function revealxneg() {
+                var reveals = document.querySelectorAll(".revealxneg");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+            window.addEventListener("scroll", revealx);
+            window.addEventListener("scroll", revealxneg);
+            revealx();
+
+            window.onscroll = function() {scrollFunction()};
+
+ 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    
+    document.getElementById("navbar").style.backgroundColor = "#000000D4";
+  }
+  else {
+      navbar.style.backgroundColor = "#00000000";
+    }
+}
+
+
+var openAnswerId = null;
+
+// Initialize: hide all answers
+window.onload = function() {
+  var allAnswers = document.querySelectorAll('.faq-answer');
+  allAnswers.forEach(function(answer) {
+    answer.style.display = 'none';
+  });
+};
+
+function toggleAnswer(id) {
+  var answer = document.getElementById('answer' + id);
+  var questions = document.querySelectorAll('.faq-question');
+
+  if (openAnswerId !== null && openAnswerId !== id) {
+    var openAnswer = document.getElementById('answer' + openAnswerId);
+    openAnswer.style.display = 'none';
+    questions.forEach(function (question) {
+      question.classList.remove('open');
+    });
+  }
+
+  if (answer.style.display === 'none') {
+    answer.style.display = 'block';
+    openAnswerId = id;
+    document.querySelector(".ques-" + id).classList.add('open');
+    document.querySelector(".btn-" + id).innerText = '-';
+  } else {
+    answer.style.display = 'none';
+    openAnswerId = null;
+    document.querySelector(".ques-" + id).classList.remove('open');
+    document.querySelector(".btn-" + id).innerText = '+';
+  }
+}
+
+
+function lol() {
+    setTimeout(function () {
+        var currentHash = window.location.hash;
+        document.querySelectorAll('.menu li').forEach(function (menuItem) {
+            var link = menuItem.querySelector('a');
+            if (link && link.getAttribute('href') === currentHash) {
+                menuItem.classList.add('active');
+            } else {
+                menuItem.classList.remove('active');
+            }
+        });
+    }, 50);
+}
+
+document.addEventListener('DOMContentLoaded', lol);
+
+        
+document.addEventListener('DOMContentLoaded', function () {
+lol(window.location.hash.substring(1));
+function updateUrlAndCallLol(sectionId) {
+history.replaceState(null, null, `#${sectionId}`);
+lol(sectionId);
+}
+
+function getCurrentSection() {
+const sections = document.querySelectorAll('.section');
+for (const section of sections) {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        return section.id;
+    }
+}
+return null;
+}
+
+window.addEventListener('scroll', function () {
+const currentSection = getCurrentSection();
+if (currentSection) {
+    updateUrlAndCallLol(currentSection);
+}
+});
+});
+
+
+
+
+        </script>
+        <script src="tilt.js"></script>
+    </div>
+    <script src="https://unpkg.com/http-server/bin/http-server"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+</body>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src="_app\immutable\chunks\slider.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
+<script type="module" src="_app/immutable/assets/c.js"></script>
+
+</html>
